@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snazzy Paws Grooming - Booking</title>
+  <link rel="stylesheet" href="style.min.css" />
+</head>
+
+<body>
+  <!-- Page header with navigation -->
+  <header>
+    <div class="nav-container">
+      <!-- Logo image -->
+      <div class="logo-title-wrapper">
+        <img src="images/logo.png" alt="Snazzy Paws Logo" class="nav-logo" />
+        <h1 class="site-title">Snazzy Paws Grooming</h1>
+      </div>
+      <!-- Hamburger menu button for mobile navigation -->
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <!-- The three lines of the burger icon -->
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+      <!-- Main navigation links -->
+      <nav id="primary-navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Booking Form -->
+  <main>
+    <h1 class="section-heading">Book a Grooming Appointment</h1>
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="owner">Owner's Name:</label>
+          <input type="text" id="owner" name="owner" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="dogname">Dog's Name:</label>
+          <input type="text" id="dogname" name="dogname" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="breed">Dog Breed:</label>
+          <input type="text" id="breed" name="breed" required />
+        </div>
+        <div class="form-group">
+          <label for="age">Dog Age:</label>
+          <input type="number" id="age" name="age" required />
+        </div>
+      </div>
+
+      <div class="form-row full-width">
+        <div class="form-group">
+          <label for="service">Select Service Option:</label>
+          <select id="service" name="service" required>
+            <option value>-- Please choose a service --</option>
+            <option>Bath and brush. Price: $25–$50</option>
+            <option>Haircut. Price: $45–$85</option>
+            <option>Nail trim. Price: $10–$20</option>
+            <option>Ear cleaning. Price: $10–$15</option>
+            <option>Teeth brushing. Price: $10–$15</option>
+            <option>De-shedding treatment. Price: $20–$40 in addition to bath
+              or haircut</option>
+            <option>Flea and tick treatment. Price: $15–$30</option>
+            <option>Spa packages. Price: $75–$150</option>
+            <option>Express service. Price: an additional $15–$25</option>
+            <option>Medicated bath. Price: an additional $20–$40</option>
+            <option>Special-breed cuts. Price varies and is often quoted after
+              consultation</option>
+            <option>Puppy package. Price: $30–$60</option>
+            <option>Senior dog package. Price: $40–$80</option>
+            <option>Full grooming package. Price: $60–$120</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row full-width">
+        <div class="form-group">
+          <label for="photo">Upload a photo of your Dog:</label>
+          <input type="file" id="photo" name="photo" accept="image/*" class="small-file-input" />
+        </div>
+      </div>
+
+      <div class="form-row full-width">
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="checkbox-row">
+          <input type="checkbox" id="gift" name="gift" />
+          <label for="gift">Gift Voucher</label>
+        </div>
+      </div>
+
+      <!-- Calendar & Time -->
+      <h2>Appointment Date & Time</h2>
+      <div class="bottom-row">
+        <div class="calendar-time-group">
+
+          <!-- Calendar -->
+          <div class="calendar-container">
+            <span>Select Date:</span>
+            <div class="calendar-grid" role="grid" aria-label="Appointment Calendar">
+              <!-- Weekday headers -->
+              <div class="calendar-header" role="row">
+                <div role="columnheader">Sun</div>
+                <div role="columnheader">Mon</div>
+                <div role="columnheader">Tue</div>
+                <div role="columnheader">Wed</div>
+                <div role="columnheader">Thu</div>
+                <div role="columnheader">Fri</div>
+                <div role="columnheader">Sat</div>
+              </div>
+
+              <!-- Week 1 -->
+              <div class="calendar-days" role="row">
+                <button role="button" aria-label="Day 1" tabindex="0">1</button>
+                <button role="button" aria-label="Day 2" tabindex="0">2</button>
+                <button role="button" aria-label="Day 3" tabindex="0">3</button>
+                <button role="button" aria-label="Day 4" tabindex="0">4</button>
+                <button role="button" aria-label="Day 5" tabindex="0">5</button>
+                <button role="button" aria-label="Day 6" tabindex="0">6</button>
+                <button role="button" aria-label="Day 7" tabindex="0">7</button>
+              </div>
+
+              <!-- Week 2 -->
+              <div class="calendar-days" role="row">
+                <button role="button" aria-label="Day 8" tabindex="0">8</button>
+                <button role="button" aria-label="Day 9" tabindex="0">9</button>
+                <button role="button" aria-label="Day 10" tabindex="0">10</button>
+                <button role="button" aria-label="Day 11" tabindex="0">11</button>
+                <button role="button" aria-label="Day 12" tabindex="0">12</button>
+                <button role="button" aria-label="Day 13" tabindex="0">13</button>
+                <button role="button" aria-label="Day 14" tabindex="0">14</button>
+              </div>
+
+              <!-- Week 3 -->
+              <div class="calendar-days" role="row">
+                <button role="button" aria-label="Day 15" tabindex="0">15</button>
+                <button role="button" aria-label="Day 16" tabindex="0">16</button>
+                <button role="button" aria-label="Day 17" tabindex="0">17</button>
+                <button role="button" aria-label="Day 18" tabindex="0">18</button>
+                <button role="button" aria-label="Day 19" tabindex="0">19</button>
+                <button role="button" aria-label="Day 20" tabindex="0">20</button>
+                <button role="button" aria-label="Day 21" tabindex="0">21</button>
+              </div>
+
+              <!-- Week 4 -->
+              <div class="calendar-days" role="row">
+                <button role="button" aria-label="Day 22" tabindex="0">22</button>
+                <button role="button" aria-label="Day 23" tabindex="0">23</button>
+                <button role="button" aria-label="Day 24" tabindex="0">24</button>
+                <button role="button" aria-label="Day 25" tabindex="0">25</button>
+                <button role="button" aria-label="Day 26" tabindex="0">26</button>
+                <button role="button" aria-label="Day 27" tabindex="0">27</button>
+                <button role="button" aria-label="Day 28" tabindex="0">28</button>
+              </div>
+
+              <!-- Week 5 -->
+              <div class="calendar-days" role="row">
+                <button role="button" aria-label="Day 29" tabindex="0">29</button>
+                <button role="button" aria-label="Day 30" tabindex="0">30</button>
+                <button role="button" aria-label="Day 31" tabindex="0">31</button>
+                <div role="gridcell" aria-hidden="true"></div>
+                <div role="gridcell" aria-hidden="true"></div>
+                <div role="gridcell" aria-hidden="true"></div>
+                <div role="gridcell" aria-hidden="true"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Time Selection -->
+          <div class="time-container">
+            <label for="appointment-time">Select Time:</label>
+            <select id="appointment-time" name="appointment-time" required aria-required="true">
+              <option value>-- Select Time --</option>
+              <option value="9:00">9:00 AM</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="12:00">12:00 PM</option>
+              <option value="13:00">1:00 PM</option>
+              <option value="14:00">2:00 PM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="16:00">4:00 PM</option>
+              <option value="17:00">5:00 PM</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+
+      <button type="submit" class="submit-button">Submit Booking
+        Request</button>
+    </form>
+  </main>
+
+  <!-- Footer with logo, location, hours, and map -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-section footer-logo">
+        <img src="images/logo.png" alt class="footer-logo" />
+      </div>
+
+      <!-- Location -->
+      <div class="footer-section footer-location">
+        <h2>Our Location</h2>
+        <address>
+          645 Te Rapa Road<br />
+          Te Rapa, Hamilton 3200<br />
+          New Zealand
+        </address>
+      </div>
+
+      <!-- Opening hours -->
+      <div class="footer-section footer-hours">
+        <h2>Opening Hours</h2>
+        <div class="opening-hours">
+          <p>Mon–Fri: 9:00am – 6:00pm</p>
+          <p>Saturday: 10:00am – 4:00pm</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="footer-section footer-map">
+        <h2>Find Us on Maps</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.424223936333!2d175.24165407588265!3d-37.75664997198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d22588c5a4b0b%3A0x52ebffe0820706f2!2s645%20Te%20Rapa%20Road%2C%20Te%20Rapa%2C%20Hamilton%203200!5e0!3m2!1sen!2snz!4v1755156257887!5m2!1sen!2snz"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Google Map of Snazzy Paws Grooming">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Copyright below everything -->
+    <p class="copyright">
+      &copy; 2025 Snazzy Paws Grooming<br />All rights reserved.
+    </p>
+  </footer>
+
+  <!-- JavaScript for burger menu toggle -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burger = document.querySelector(".burger");
+      const nav = document.getElementById("primary-navigation");
+
+      burger.addEventListener("click", function () {
+        // Toggle the nav open/close
+        nav.classList.toggle("nav-open");
+        burger.classList.toggle("active");
+
+        // Dynamically update aria-expanded for screen readers
+        const isExpanded = burger.classList.contains("active");
+        burger.setAttribute("aria-expanded", isExpanded);
+      });
+    });
+  </script>
+</body>
+
+</html>

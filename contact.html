@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snazzy Paws Grooming - Contact</title>
+  <link rel="stylesheet" href="style.min.css" />
+</head>
+
+<body>
+  <!-- Page header with navigation -->
+  <header>
+    <div class="nav-container">
+      <!-- Logo image -->
+      <div class="logo-title-wrapper">
+        <img src="images/logo.png" alt="Snazzy Paws Logo" class="nav-logo" />
+        <h1 class="site-title">Snazzy Paws Grooming</h1>
+      </div>
+      <!-- Hamburger menu button for mobile navigation -->
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <!-- The three lines of the burger icon -->
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+      <!-- Main navigation links -->
+      <nav id="primary-navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Google Map -->
+    <section class="top-map" style="width: 100%; max-height: 350px; overflow: hidden;">
+      <!-- Visually hidden heading for accessibility -->
+      <h2 class="visually-hidden">Our Location Map</h2>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.424223936333!2d175.24165407588265!3d-37.75664997198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d22588c5a4b0b%3A0x52ebffe0820706f2!2s645%20Te%20Rapa%20Road%2C%20Te%20Rapa%2C%20Hamilton%203200!5e0!3m2!1sen!2snz!4v1755156257887!5m2!1sen!2snz"
+        height="350" style="border:0; width: 100%;" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Google Map of Snazzy Paws Grooming">
+      </iframe>
+    </section>
+
+
+    <!-- Contact Form -->
+    <h1 class="section-heading">Contact Us</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq1" />
+        <label for="faq1" class="faq-question" aria-controls="faq1-answer" tabindex="0">
+          What services do you offer?
+        </label>
+        <div class="faq-answer" id="faq1-answer" role="region" aria-labelledby="faq1">
+          <p>
+            We offer grooming packages including bathing, brushing, nail
+            trimming, ear cleaning, styled cuts,
+            de-shedding treatments, and specialty breed trims.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq2" />
+        <label for="faq2" class="faq-question" aria-controls="faq2-answer" tabindex="0">
+          How do I book an appointment?
+        </label>
+        <div class="faq-answer" id="faq2-answer" role="region" aria-labelledby="faq2">
+          <p>
+            You can book via our online booking form, call us during business
+            hours, or send us a message through our
+            website contact form.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq3" />
+        <label for="faq3" class="faq-question" aria-controls="faq3-answer" tabindex="0">
+          Do you handle nervous or anxious dogs?
+        </label>
+        <div class="faq-answer" id="faq3-answer" role="region" aria-labelledby="faq3">
+          <p>
+            Yes! Our groomers are trained to work with nervous pets, using
+            gentle handling, calming techniques, and
+            breaks when needed to make grooming as stress-free as possible.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq4" />
+        <label for="faq4" class="faq-question" aria-controls="faq4-answer" tabindex="0">
+          How often should my dog be groomed?
+        </label>
+        <div class="faq-answer" id="faq4-answer" role="region" aria-labelledby="faq4">
+          <p>
+            It depends on your dog’s breed and coat type. On average, most
+            dogs benefit from professional grooming every
+            4–8 weeks.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq5" />
+        <label for="faq5" class="faq-question" aria-controls="faq5-answer" tabindex="0">
+          Do you groom puppies?
+        </label>
+        <div class="faq-answer" id="faq5-answer" role="region" aria-labelledby="faq5">
+          <p>
+            Yes, we welcome puppies! We recommend starting grooming sessions
+            early to help them get used to the sights,
+            sounds, and handling.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq6" />
+        <label for="faq6" class="faq-question" aria-controls="faq6-answer" tabindex="0">
+          Can I stay with my dog during grooming?
+        </label>
+        <div class="faq-answer" id="faq6-answer" role="region" aria-labelledby="faq6">
+          <p>
+            In most cases, dogs are calmer when their owners aren’t present.
+            However, if your pet needs special support,
+            we can make arrangements.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq7" />
+        <label for="faq7" class="faq-question" aria-controls="faq7-answer" tabindex="0">
+          Do you offer flea or tick treatments?
+        </label>
+        <div class="faq-answer" id="faq7-answer" role="region" aria-labelledby="faq7">
+          <p>
+            Yes, we can provide flea baths upon request. If your dog has a
+            severe infestation, we may recommend
+            treatment from a veterinarian first.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq8" />
+        <label for="faq8" class="faq-question" aria-controls="faq8-answer" tabindex="0">
+          What if my dog has special medical needs?
+        </label>
+        <div class="faq-answer" id="faq8-answer" role="region" aria-labelledby="faq8">
+          <p>
+            Please let us know about any medical conditions or mobility issues
+            in advance. We will take extra care and
+            adjust the grooming process accordingly.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with logo, location, hours, and map -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-section footer-logo">
+        <img src="images/logo.png" alt class="footer-logo" />
+      </div>
+
+      <!-- Location -->
+      <div class="footer-section footer-location">
+        <h2>Our Location</h2>
+        <address>
+          645 Te Rapa Road<br />
+          Te Rapa, Hamilton 3200<br />
+          New Zealand
+        </address>
+      </div>
+
+      <!-- Opening hours -->
+      <div class="footer-section footer-hours">
+        <h2>Opening Hours</h2>
+        <div class="opening-hours">
+          <p>Mon–Fri: 9:00am – 6:00pm</p>
+          <p>Saturday: 10:00am – 4:00pm</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="footer-section footer-map">
+        <h2>Find Us on Maps</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.424223936333!2d175.24165407588265!3d-37.75664997198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d22588c5a4b0b%3A0x52ebffe0820706f2!2s645%20Te%20Rapa%20Road%2C%20Te%20Rapa%2C%20Hamilton%203200!5e0!3m2!1sen!2snz!4v1755156257887!5m2!1sen!2snz"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Google Map of Snazzy Paws Grooming">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Copyright below everything -->
+    <p class="copyright">
+      &copy; 2025 Snazzy Paws Grooming<br />All rights reserved.
+    </p>
+  </footer>
+
+  <!-- JavaScript for burger menu toggle -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const burger = document.querySelector(".burger");
+      const nav = document.getElementById("primary-navigation");
+
+      burger.addEventListener("click", function () {
+        // Toggle the nav open/close
+        nav.classList.toggle("nav-open");
+        burger.classList.toggle("active");
+
+        // Dynamically update aria-expanded for screen readers
+        const isExpanded = burger.classList.contains("active");
+        burger.setAttribute("aria-expanded", isExpanded);
+      });
+    });
+  </script>
+</body>
+
+</html>
