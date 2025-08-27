@@ -272,14 +272,12 @@
       const nav = document.getElementById("primary-navigation");
 
       burger.addEventListener("click", function () {
-        // Toggle the nav open/close
         nav.classList.toggle("nav-open");
         burger.classList.toggle("active");
 
-        // Dynamically update aria-expanded for screen readers
         const isExpanded = burger.classList.contains("active");
         burger.setAttribute("aria-expanded", isExpanded);
-      });
+      }, { passive: true }); // <-- add this
     });
   </script>
 </body>
