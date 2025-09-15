@@ -886,70 +886,44 @@ footer .copyright {
 
 /* ===== RESPONSIVE STYLING ===== */
 
-/* Large tablets / small desktops (≤1200px) */
-@media (max-width: 1200px) {
+
+
+/* Medium devices */
+@media (min-width: 577px) and (max-width: 1200px) {
   .testimonials-gallery-section {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
 
-  .testimonials-wrapper {
+  .testimonials-gallery-section .col-md-6:first-child {
     order: 1;
+    width: 100%;
+  }
+
+  .testimonials-cards-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    width: 100%;
   }
 
-  .testimonials-cards-wrapper .col-6 > div {
-    height: auto;
-    min-height: 150px;
-    padding: 15px;
-  }
-
-  .dog-care-tips {
-    padding: 0 40px;
-  }
-
-  .tips-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-
-  .tip-item {
-    padding: 15px;
-    gap: 10px;
-  }
-
-  .tip-icon {
-    width: 70px;
-    height: 70px;
-  }
-
-  .tip-item p {
-    font-size: 0.95rem;
-  }
-
-  .gallery-wrapper {
-    order: 2;
+  .testimonials-cards-wrapper .col-6 {
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  .testimonials-gallery-section .col-md-6:last-child {
+    order: 2;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .gallery-image-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     position: relative;
   }
@@ -960,25 +934,17 @@ footer .copyright {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
-
-/* Small devices (≤768px) */
-@media (max-width: 768px) {
-  .owner-bios-section,
-  .testimonials-gallery-section,
-  .dog-care-tips,
-  .gallery-wrapper,
-  .tables-wrapper {
-    padding: 0 20px;
-  }
 
   .tips-grid {
     grid-template-columns: 1fr;
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 15px;
+  }
+  .gallery-wrapper {
+    padding: 0 30px;
   }
 
   .hero-banner {
@@ -1002,13 +968,9 @@ footer .copyright {
     height: 60px;
     width: 60px;
   }
-
-  .testimonials-wrapper {
-    grid-template-columns: 1fr;
-  }
 }
 
-/* Extra small devices (≤576px) */
+/* Small devices */
 @media (max-width: 576px) {
   h2 {
     font-size: 1.5rem;
@@ -1018,6 +980,10 @@ footer .copyright {
     font-size: 1.5rem;
   }
 
+  .navbar-brand span {
+    font-size: 1.3rem;
+  }
+
   .testimonials-cards-wrapper .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1025,6 +991,14 @@ footer .copyright {
 
   .gallery-image-container {
     max-width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .gallery-wrapper {
+    padding: 0 15px;
   }
 
   form {
