@@ -1,0 +1,6 @@
+<Files "roster.html">
+    AuthType Basic
+    AuthName "Restricted Area"
+    AuthUserFile "C:/Users/DELL/OneDrive/Documents/BIT607/Assessment 3/Bootstrap/.htpasswd"
+    Require valid-user
+</Files>

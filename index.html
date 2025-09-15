@@ -2,262 +2,237 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Snazzy Paws Grooming - Home</title>
-    <link rel="preload" href="style.min.css" as="style">
-    <link rel="stylesheet" href="style.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snazzy Paws Grooming - Home</title>
+  <meta name="description"
+    content="Snazzy Paws Grooming in Hamilton offers expert pet grooming services. We treat your pets like family with care, love, and style.">
+  <title>Snazzy Paws Grooming - Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Page header with navigation -->
-    <header>
-        <div class="nav-container">
-            <!-- Logo image -->
-            <div class="logo-title-wrapper">
-                <div class="logo-title-wrapper">
-                    <div class="nav-logo" role="img" aria-label="Snazzy Paws Logo"></div>
-                </div>
-                <h1 class="site-title">Snazzy Paws Grooming</h1>
-            </div>
-            <!-- Hamburger menu button for mobile navigation -->
-            <button class="burger" aria-label="Toggle navigation" aria-expanded="false"
-                aria-controls="primary-navigation">
-                <!-- The three lines of the burger icon -->
-                <span class="burger-bar"></span>
-                <span class="burger-bar"></span>
-                <span class="burger-bar"></span>
-            </button>
-            <!-- Main navigation links -->
-            <nav id="primary-navigation" aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="booking.html">Booking</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-purple shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="nav-logo me-2" role="img" aria-label="Snazzy Paws Logo"></div>
+        <span>Snazzy Paws Grooming</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navigation"
+        aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="primary-navigation">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero image and welcome message -->
-    <section class="hero-banner" aria-label="Happy dog after grooming">
-        <div class="hero-text">
-            <!-- Main heading welcoming visitors -->
-            <h2 aria-label="Welcome to Snazzy Paws Grooming - Your friendly neighbourhood groomer in Hamilton">
-                Welcome to Snazzy Paws Grooming
-            </h2>
-            <p>
-                Your friendly neighbourhood groomer in Hamilton. We treat
-                your pets
-                like family.
-            </p>
-            <!-- Buttons to navigate to the Services or Booking page -->
-            <div class="button-group">
-                <a href="services.html" class="btn-primary">View
-                    Services</a>
-                <a href="booking.html" class="btn-primary">Book Now</a>
+  <!-- Hero Section -->
+  <section class="hero-banner position-relative text-center text-white d-flex align-items-center justify-content-center"
+    style="background-image: url('images/Hero-image.webp'); background-size: cover; background-position: center;">
+    <div class="position-absolute top-0 start-0 w-100 h-100 overlay"></div>
+    <div class="position-relative">
+      <h2 class="hero-title" aria-label="Welcome to Snazzy Paws Grooming">Welcome to Snazzy Paws Grooming</h2>
+      <p class="lead">Your friendly neighbourhood groomer in Hamilton. We treat your pets like family.</p>
+      <div class="mt-3">
+        <a href="services.html" class="btn btn-primary me-2">View Services</a>
+        <a href="booking.html" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container-fluid my-5">
+
+    <!-- Owner Bios -->
+    <section class="owner-bios-section mb-5">
+      <h2 class="section-heading mb-4">Owner Bios</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="images/jane.webp" class="card-img-top" alt="Photo of Jane, Founder & Grooming Specialist">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Jane – Founder & Grooming Specialist</h5>
+              <p class="card-text">With 12 years of experience, Jane founded Snazzy Paws Grooming to create a warm,
+                welcoming space for dogs and owners. Known for her gentle touch and expert styling, she treats every pup
+                like family.</p>
             </div>
+          </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="images/sarah.webp" class="card-img-top" alt="Photo of Sarah, Senior Pet Stylist">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Sarah – Senior Pet Stylist</h5>
+              <p class="card-text">Sarah brings a creative flair to every cut and style. With a background in pet
+                fashion and behavior, she has a special talent for helping nervous dogs feel at ease during their
+                transformation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="images/mike.webp" class="card-img-top" alt="Photo of Mike, Puppy Care Coordinator">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mike – Puppy Care Coordinator</h5>
+              <p class="card-text">Mike is our go-to guy for wrangling the littlest clients. His calm demeanor and
+                playful energy make him a puppy favorite. He ensures each pup’s first grooming experience is a positive
+                one.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="images/lisa.webp" class="card-img-top" alt="Photo of Lisa, Spa & Bath Expert">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Lisa – Spa & Bath Expert</h5>
+              <p class="card-text">Lisa is the heart behind our spa treatments. From luxurious baths to soothing
+                massages, she pampers every pooch with care. Her specialty? Making every dog leave smelling fresh and
+                feeling fabulous.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Main content area -->
-    <main id="main-content" class="homepage-main">
-        <!-- Section introducing the business owners -->
-        <section class="owner-bios-section">
-            <div class="hero-text">
-                <h2 class="section-heading">Owner Bios</h2>
-                <div class="owner-bios">
-                    <!-- Each owner has a card with photo and description -->
-                    <figure class="owner-card">
-                        <img src="images/jane.webp" type="image/webp"
-                            alt="Photo of Jane, Founder & Grooming Specialist">
-                        <figcaption>
-                            <h3>Jane – Founder & Grooming Specialist</h3>
-                            <p>
-                                With 12 years of experience, Jane founded
-                                Snazzy Paws Grooming to create a warm,
-                                welcoming space for dogs and owners. Known
-                                for her gentle touch and expert
-                                styling, she treats every pup like family.
-                            </p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="owner-card">
-                        <img src="images/sarah.webp" type="image/webp" alt="Photo of Sarah, Senior Pet Stylist">
-                        <figcaption>
-                            <h3>Sarah – Senior Pet Stylist</h3>
-                            <p>
-                                Sarah brings a creative flair to every cut
-                                and style. With a background in pet fashion
-                                and behavior, she has a special talent for
-                                helping nervous dogs feel at ease during
-                                their transformation.
-                            </p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="owner-card">
-                        <img src="images/mike.webp" type="image/webp" alt="Photo of Mike, Puppy Care Coordinator">
-                        <figcaption>
-                            <h3>Mike – Puppy Care Coordinator</h3>
-                            <p>
-                                Mike is our go-to guy for wrangling the
-                                littlest clients. His calm demeanor and
-                                playful
-                                energy make him a puppy favorite. He ensures
-                                each pup’s first grooming experience is a
-                                positive one.
-                            </p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="owner-card">
-                        <img src="images/lisa.webp" type="image/webp" alt="Photo of Lisa, Spa & Bath Expert">
-                        <figcaption>
-                            <h3>Lisa – Spa & Bath Expert</h3>
-                            <p>
-                                Lisa is the heart behind our spa treatments.
-                                From luxurious baths to soothing massages,
-                                she pampers every pooch with care. Her
-                                specialty? Making every dog leave smelling
-                                fresh
-                                and feeling fabulous.
-                            </p>
-                        </figcaption>
-                    </figure>
+    <!-- Testimonials -->
+    <section class="testimonials-gallery-section my-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h2 class="section-heading mb-4">Testimonials</h2>
+          <div class="testimonials-cards-wrapper row g-3">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3 p-2">
+                <img src="images/testimonial1.webp" class="rounded-circle testimonial-img"
+                  alt="Amanda, satisfied customer">
+                <div>
+                  <h6 class="mb-1">Amanda – satisfied customer</h6>
+                  <p class="mb-0">"Amazing grooming service! My dog loves it here."</p>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!-- Section with testimonials and a gallery preview -->
-        <section class="testimonials-gallery-section">
-            <div class="testimonials-box">
-                <h2 class="section-heading">Testimonials</h2>
-                <div class="testimonials-grid">
-                    <!-- Each testimonial includes photo and a info -->
-                    <figure class="testimonial">
-                        <img src="images/testimonial1.webp" type="image/webp" alt="Amanda, satisfied customer">
-                        <figcaption>
-                            <h3>Amanda – satisfied customer</h3>
-                            <p>"Amazing grooming service! My dog loves it here."</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="testimonial">
-                        <img src="images/testimonial2.webp" type="image/webp" alt="John, happy customer">
-                        <figcaption>
-                            <h3>John – happy customer</h3>
-                            <p>"Friendly staff and very professional."</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="testimonial">
-                        <img src="images/testimonial3.webp" type="image/webp" alt="Priya, delighted customer">
-                        <figcaption>
-                            <h3>Priya – delighted customer</h3>
-                            <p>"Highly recommend Snazzy Paws to all pet owners."</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="testimonial">
-                        <img src="images/testimonial4.webp" type="image/webp" alt="Luke, pleased customer">
-                        <figcaption>
-                            <h3>Luke – pleased customer</h3>
-                            <p>"Clean, caring, and convenient location."</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="testimonial">
-                        <img src="images/testimonial5.webp" type="image/webp" alt="Mia, returning customer">
-                        <figcaption>
-                            <h3>Mia – returning customer</h3>
-                            <p>"Great attention to detail and gentle grooming."</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="testimonial">
-                        <img src="images/testimonial6.webp" type="image/webp" alt="Ethan, loyal customer">
-                        <figcaption>
-                            <h3>Ethan – loyal customer</h3>
-                            <p>"My pets always leave looking and feeling fantastic."</p>
-                        </figcaption>
-                    </figure>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3 p-2">
+                <img src="images/testimonial2.webp" class="rounded-circle testimonial-img" alt="John, happy customer">
+                <div>
+                  <h6 class="mb-1">John – happy customer</h6>
+                  <p class="mb-0">"Friendly staff and very professional."</p>
                 </div>
+              </div>
             </div>
-
-            <!-- Gallery preview image with overlay button -->
-            <div class="gallery-image-container">
-                <img src="images/gallery-promo.webp" type="image/webp" alt="Preview of groomed dogs in gallery">
-                <div class="overlay"></div>
-                <a href="gallery.html" class="btn-overlay">View Gallery</a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer with logo, location, hours, and map -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <!-- Logo -->
-            <div class="footer-section">
-                <div class="footer-logo" role="img" aria-label="Snazzy Paws Logo"></div>
-            </div>
-
-            <!-- Location -->
-            <div class="footer-section footer-location">
-                <h2>Our Location</h2>
-                <address>
-                    645 Te Rapa Road<br>
-                    Te Rapa, Hamilton 3200<br>
-                    New Zealand
-                </address>
-            </div>
-
-            <!-- Opening hours -->
-            <div class="footer-section footer-hours">
-                <h2>Opening Hours</h2>
-                <div class="opening-hours">
-                    <p>Mon–Fri: 9:00am – 6:00pm</p>
-                    <p>Saturday: 10:00am – 4:00pm</p>
-                    <p>Sunday: Closed</p>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3 p-2">
+                <img src="images/testimonial3.webp" class="rounded-circle testimonial-img"
+                  alt="Priya, delighted customer">
+                <div>
+                  <h6 class="mb-1">Priya – delighted customer</h6>
+                  <p class="mb-0">"Highly recommend Snazzy Paws to all pet owners."</p>
                 </div>
+              </div>
             </div>
-
-            <!-- Map -->
-            <div class="footer-section footer-map">
-                <h2>Find Us on Maps</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.424223936333!2d175.24165407588265!3d-37.75664997198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d22588c5a4b0b%3A0x52ebffe0820706f2!2s645%20Te%20Rapa%20Road%2C%20Te%20Rapa%2C%20Hamilton%203200!5e0!3m2!1sen!2snz!4v1755156257887!5m2!1sen!2snz"
-                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    title="Google Map of Snazzy Paws Grooming">
-                </iframe>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3 p-2">
+                <img src="images/testimonial4.webp" class="rounded-circle testimonial-img" alt="Luke, pleased customer">
+                <div>
+                  <h6 class="mb-1">Luke – pleased customer</h6>
+                  <p class="mb-0">"Clean, caring, and convenient location."</p>
+                </div>
+              </div>
             </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3 p-2">
+                <img src="images/testimonial5.webp" class="rounded-circle testimonial-img"
+                  alt="Mia, returning customer">
+                <div>
+                  <h6 class="mb-1">Mia – returning customer</h6>
+                  <p class="mb-0">"Great attention to detail and gentle grooming."</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3 p-2">
+                <img src="images/testimonial6.webp" class="rounded-circle testimonial-img" alt="Ethan, loyal customer">
+                <div>
+                  <h6 class="mb-1">Ethan – loyal customer</h6>
+                  <p class="mb-0">"My pets always leave looking and feeling fantastic."</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Copyright below everything -->
-        <p class="copyright">
-            &copy; 2025 Snazzy Paws Grooming<br>All rights reserved.
-        </p>
-    </footer>
+        <!-- Gallery page quick link -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="gallery-image-container text-center w-100">
+            <img src="images/gallery-promo.webp" class="img-fluid rounded" alt="Preview of groomed dogs in gallery">
+            <div class="overlay"></div>
+            <a href="gallery.html" class="btn-overlay">View Gallery</a>
+          </div>
+        </div>
 
-    <!-- JavaScript for burger menu toggle -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const burger = document.querySelector(".burger");
-            const nav = document.getElementById("primary-navigation");
+      </div>
+    </section>
 
-            burger.addEventListener("click", function () {
-                nav.classList.toggle("nav-open");
-                burger.classList.toggle("active");
+  </main>
 
-                const isExpanded = burger.classList.contains("active");
-                burger.setAttribute("aria-expanded", isExpanded);
-            }, { passive: true }); // <-- add this
-        });
-    </script>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-section">
+        <div class="footer-logo" role="img" aria-label="Snazzy Paws Logo"></div>
+      </div>
+
+      <!-- Location -->
+      <div class="footer-section">
+        <h5>Our Location</h5>
+        <address>
+          645 Te Rapa Road<br>
+          Te Rapa, Hamilton 3200<br>
+          New Zealand
+        </address>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="footer-section opening-hours">
+        <h5>Opening Hours</h5>
+        <p>Mon–Fri: 9:00am – 6:00pm</p>
+        <p>Saturday: 10:00am – 4:00pm</p>
+        <p>Sunday: Closed</p>
+      </div>
+
+      <!-- Google Map -->
+      <div class="footer-section footer-map">
+        <h5>Find Us on Maps</h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.424223936333!2d175.24165407588265!3d-37.75664997198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d22588c5a4b0b%3A0x52ebffe0820706f2!2s645%20Te%20Rapa%20Road%2C%20Te%20Rapa%2C%20Hamilton%203200!5e0!3m2!1sen!2snz!4v1755156257887!5m2!1sen!2snz"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Google Map of Snazzy Paws Grooming">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Privacy Statement link -->
+    <p class="privacy-link">
+      View our <a href="privacy.html">Privacy Statement</a>
+    </p>
+
+    <p class="copyright">&copy; 2025 Snazzy Paws Grooming. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
