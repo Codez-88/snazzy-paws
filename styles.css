@@ -150,7 +150,7 @@ h3 {
   font-weight: 700;
 }
 
-/* ===== TESTIMONIALS & GALLERY ===== */
+/* ===== TESTIMONIALS & GALLERY QUICKLINK ===== */
 .testimonials-gallery-section {
   padding: 0 80px;
   margin: 40px 0;
@@ -968,6 +968,20 @@ footer .copyright {
     height: 60px;
     width: 60px;
   }
+
+  .staff-table {
+    padding: 0 40px;
+  }
+
+  .staff-table thead th,
+  .staff-table tbody td {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .staff-table table tbody tr:hover td {
+    background-color: #8fcde6 !important;
+  }
 }
 
 /* Small devices */
@@ -1028,5 +1042,53 @@ footer .copyright {
     width: 120px;
     height: 120px;
     margin-bottom: 10px;
+  }
+
+  .staff-table {
+    padding: 0 15px;
+  }
+
+  .staff-table thead th,
+  .staff-table tbody td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .staff-table table,
+  .staff-table thead,
+  .staff-table tbody,
+  .staff-table th,
+  .staff-table td,
+  .staff-table tr {
+    display: block;
+  }
+
+  .staff-table thead tr {
+    display: none;
+  }
+
+  .staff-table tbody tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  .staff-table tbody td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .staff-table tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    text-align: left;
   }
 }
